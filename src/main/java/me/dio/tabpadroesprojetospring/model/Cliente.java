@@ -1,5 +1,7 @@
 package me.dio.tabpadroesprojetospring.model;
 
+
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,12 +13,14 @@ import lombok.Setter;
 @Setter
 @Entity
 public class Cliente {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String nome;
 	@ManyToOne
 	private Endereco endereco;
+
+
 
 }
